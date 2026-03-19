@@ -19,6 +19,11 @@ body {
     line-height: 1.5;
 }
 
+main h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+
+}
 /* Header */
 header {
     background-color: var(--blue);
@@ -98,11 +103,6 @@ header h1 {
     background-color: var(--white);
 }
 
-#jasenhinnasto h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
 .member-card {
     display: flex;
     flex-wrap: wrap;
@@ -153,11 +153,6 @@ header h1 {
 #services {
     padding: 50px 20px;
     background-color: var(--white);
-}
-
-#services h2 {
-    text-align: center;
-    margin-bottom: 40px;
 }
 
 .service-grid {
@@ -266,10 +261,6 @@ footer p {
     text-align: center;
 }
 
-.service-content h2 {
-    margin-bottom: 10px;
-}
-
 .service-content p {
     font-size: 16px;
 }
@@ -343,6 +334,136 @@ main button:hover {
     background-color: var(--black);
 }
 
+/* Location */
+.address {
+    max-width: 1100px;
+    margin: 0 auto 40px auto;
+    background-color: var(--lightblue);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.location {
+    max-width: 1100px;
+    margin: 0 auto 40px auto;
+}
+
+.location iframe {
+    border-radius: 10px;
+}
+
+.gyminfo {
+    max-width: 1100px;
+    margin: 0 auto 40px auto;
+}
+
+.gyminfo-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: stretch;
+}
+
+/* Teksti */
+
+.gyminfo-text {
+    flex: 1;
+    min-width: 250px;
+    background-color: var(--lightblue);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Kuva */
+
+.gyminfo-image {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+}
+
+.gyminfo-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Yhteydenotto */
+.contact-grid {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-info,
+.contact-image,
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+
+    background-color: var(--lightblue);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-image {
+    display: flex;
+}
+
+.contact-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.contact-form {
+    text-align: center;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+}
+
+.contact-form textarea {
+    height: 120px;
+    resize: none;
+}
+
+.contact-form button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+
+    background-color: var(--blue);
+    color: var(--black);
+    font-weight: bold;
+    cursor: pointer;
+}
+
 /* Mobile */
 @media (max-width: 768px) {
 
@@ -363,5 +484,13 @@ main button:hover {
 
     .membership-card {
         width: 100%;
+    }
+
+    .gyminfo-container {
+        flex-direction: column;
+    }
+
+    .contact-grid {
+        flex-direction: column;
     }
 }
