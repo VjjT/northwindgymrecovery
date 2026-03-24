@@ -17,6 +17,10 @@ body {
     background-color: var(--white);
     color: var(--black);
     line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 main h2 {
@@ -52,6 +56,9 @@ header h1 {
     background-color: var(--lightblue);
     padding: 2rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero p {
@@ -95,6 +102,10 @@ header h1 {
     text-decoration: none;
     color: var(--black);
     font-weight: bold;
+}
+
+.hero nav a:hover {
+    text-decoration: underline;
 }
 
 /* Jäsenyydet */
@@ -217,10 +228,12 @@ footer {
 
 footer h4 {
     margin-bottom: 0.5rem;
+    text-align: center;
 }
 
 footer p {
     margin-bottom: 0.25rem;
+    text-align: center;
 }
 
 /* Palvelut */
@@ -235,8 +248,8 @@ footer p {
 
 .services-container {
     width: 90%;
-    max-width: 1100px;
-    margin: auto;
+    max-width: 900px;
+    margin: 0 auto;
     margin-bottom: 50px;
     display: flex;
     flex-wrap: wrap;
@@ -334,7 +347,7 @@ main button:hover {
     background-color: var(--black);
 }
 
-/* Location */
+/* Sijainti */
 .address {
     max-width: 1100px;
     margin: 0 auto 40px auto;
@@ -346,6 +359,11 @@ main button:hover {
 .location {
     max-width: 1100px;
     margin: 0 auto 40px auto;
+    background-color: var(--lightblue);
+}
+
+.location h3 {
+    padding: 20px;
 }
 
 .location iframe {
@@ -464,11 +482,57 @@ main button:hover {
     cursor: pointer;
 }
 
+/* Muuta */
+.card,
+.service,
+.service-card,
+.membership-card,
+.address,
+.location,
+.gyminfo-text,
+.gyminfo-image,
+.contact-info,
+.contact-image,
+.contact-form {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    border-radius: 8px;
+}
+
 /* Mobile */
 @media (max-width: 768px) {
 
-    .service-card {
+    header {
         flex-direction: column;
+        text-align: center;
+    }
+
+    header img {
+        height: 40px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    .service-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    .service-card {
+        width: 100%;
+        max-width: 350px;
         text-align: center;
     }
 
@@ -492,5 +556,44 @@ main button:hover {
 
     .contact-grid {
         flex-direction: column;
+    }
+
+    .card,
+    .service,
+    .service-card,
+    .membership-card,
+    .address,
+    .location,
+    .gyminfo-text,
+    .gyminfo-image,
+    .contact-info,
+    .contact-image,
+    .contact-form {
+        width: 100%;
+        max-width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .member-card,
+    .service-grid,
+    .services-container,
+    .membership-grid,
+    .contact-grid,
+    .gyminfo,
+    .address,
+    .location,
+    .feedback-grid {
+        width: 92%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer div {
+        width: 100%;
     }
 }
