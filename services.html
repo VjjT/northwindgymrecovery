@@ -6,6 +6,39 @@
     <title>Northwind Gym & Recovery services, palvelut, ryhmäliikunta, PT-palvelut</title>
     <meta name="description" content="Vaasan paras kuntosali ja palautumiskeskus yhden katon alla. Tältä sivulta löydät palvelut">
     <link rel="stylesheet" href="css/styles.css">
+
+    <script type="application/ld+json">
+    {
+      "@context":"https://schema.org",
+      "@type":"Service",
+      "serviceType":"Gym and Fitness Services",
+      "provider":{
+        "@type":"HealthClub",
+        "name":"Northwind Gym & Recovery",
+        "address":{
+          "@type":"PostalAddress",
+          "streetAddress":"Vaasankatu 1",
+          "addressLocality":"Vaasa",
+          "postalCode": "00000",
+          "addressCountry":"FI"
+        }
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Vaasa"
+      },
+      "hasOfferCatalog": {
+        "@type":"OfferCatalog",
+        "name":"Kuntosalipalvelut",
+        "itemListElement": [
+          { "@type":"Offer","itemOffered": { "@type":"Service","name":"Kuntosaliharjoittelu Vaasa" } },
+          { "@type":"Offer","itemOffered": { "@type":"Service","name":"Personal Training Vaasa" } },
+          { "@type":"Offer","itemOffered": { "@type":"Service","name":"Ryhmäliikuntatunnit" } },
+          { "@type":"Offer","itemOffered": { "@type":"Service","name":"Recovery & Palautumiskeskus" } }
+        ]
+      }
+    }
+    </script>
 </head>
 <body>
 <header>
