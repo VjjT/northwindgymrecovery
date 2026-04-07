@@ -113,11 +113,13 @@ header h1 {
 .hero nav a {
     text-decoration: none;
     color: var(--black);
-    font-weight: bold;
 }
 
 .hero nav a:hover {
     text-decoration: underline;
+}
+.hero nav a.active {
+    font-weight: bold;
 }
 
 /* Jäsenyydet */
@@ -161,7 +163,7 @@ header h1 {
 .card button {
     margin-top: auto;
     background-color: var(--blue);
-    color: var(--white);
+    color: var(--black);
     border: none;
     padding: 0.5rem 1rem;
     cursor: pointer;
@@ -312,7 +314,7 @@ main button {
     margin-bottom: 20px;
     margin-top: 20px;
     background-color: var(--lightblue);
-    color: var(--white);
+    color: var(--black);
     border: none;
     padding: 0.75rem 1.5rem;
     cursor: pointer;
@@ -357,7 +359,7 @@ main button:hover {
 .membership-card button {
     margin-top: 10px;
     background-color: var(--blue);
-    color: var(--white);
+    color: var(--black);
     border: none;
     padding: 0.5rem 1rem;
     cursor: pointer;
@@ -498,7 +500,7 @@ main button:hover {
     border-radius: 6px;
 
     background-color: var(--blue);
-    color: var(--white);
+    color: var(--black);
     font-weight: bold;
     cursor: pointer;
 }
@@ -521,16 +523,8 @@ main button:hover {
 }
 
 .card:hover,
-.service:hover,
-.service-card:hover,
 .membership-card:hover,
-.address:hover,
-.location:hover,
-.gyminfo-text:hover,
-.gyminfo-image:hover,
-.contact-info:hover,
-.contact-image:hover,
-.contact-form:hover{
+.location:hover{
     transform: translateY(-6px);
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.2);
 }
