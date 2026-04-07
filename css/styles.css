@@ -51,6 +51,10 @@ header h1 {
     width: 100%;
 }
 
+header a {
+    line-height: 0;
+}
+
 /* Hero section */
 .hero {
     background-color: var(--lightblue);
