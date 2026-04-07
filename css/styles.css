@@ -41,8 +41,7 @@ header {
 
 header img {
     height: 90px;
-    position: absolute;
-    left: 10px;
+   
 }
 
 header h1 {
@@ -53,6 +52,10 @@ header h1 {
 
 header a {
     line-height: 0;
+    position:absolute;
+    left: 10px;
+    top: 5px;
+    display: block;
 }
 
 /* Hero section */
