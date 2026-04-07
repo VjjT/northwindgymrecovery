@@ -70,6 +70,7 @@ header h1 {
     max-width: 100%;
     height: auto;
     margin-bottom: 1.5rem;
+    border-radius: 10px;
 }
 
 .hero button {
@@ -514,8 +515,24 @@ main button:hover {
 .contact-info,
 .contact-image,
 .contact-form {
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.card:hover,
+.service:hover,
+.service-card:hover,
+.membership-card:hover,
+.address:hover,
+.location:hover,
+.gyminfo-text:hover,
+.gyminfo-image:hover,
+.contact-info:hover,
+.contact-image:hover,
+.contact-form:hover{
+    transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.2);
 }
 
 /* Mobile */
