@@ -489,6 +489,7 @@ main button:hover {
 }
 
 .contact-form input,
+.contact-form select,
 .contact-form textarea {
     padding: 10px;
     border-radius: 6px;
@@ -510,6 +511,16 @@ main button:hover {
     color: var(--black);
     font-weight: bold;
     cursor: pointer;
+}
+
+.contact-form select {
+    background-color: white;
+    cursor: pointer;
+    color: #555;
+}
+
+.contact-form select:focus {
+    outline: 2px solid var(--blue);
 }
 
 /* Muuta */
