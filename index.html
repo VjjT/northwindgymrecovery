@@ -49,7 +49,7 @@
 <p>Kuntosali urheilijoille ja aktiivi liikkujille, meillä urheilet ja palaudut saman katon alla.</p>
 <a href="contact.html"><img src="nortwindpics/NWarvioitulogo.jpg" alt="Northwindin kuntosali ammattimaiseen treenamiseen, kuva salin jäsenestä" style="width: auto; height: auto;">
 </a>
-    <button onclick="location.href='lisence.html'">Liity jäseneksi</button>
+    <button onclick="location.href='join.html'">Liity jäseneksi</button>
     <input type="checkbox" id="menu-toggle">
 <label for="menu-toggle" class="menu-icon">☰</label>
 <nav>
@@ -59,7 +59,8 @@
         <li><a href ="lisence.html">Jäsenyydet</a></li>
         <li><a href ="location.html">Yleistä kuntosalista ja sijainti</a></li>
         <li><a href ="contact.html">Yhteystiedot</a></li>
-        <li><a href="join.html">Liity jäseneksi</a></li>
+        <li><a href="join.html" class="join-btn">Liity jäseneksi</a></li>
+        
     </ul>
 </nav>
 </section>
@@ -74,21 +75,21 @@
 Kuntosalijäsenyys 1kk 50€ (kertamaksulla 12kk = 500€)<br>
 Tällä jäsentasolla olet oikeutettu käyttämään yhtä kaupungin moderneinpaa kuntosalia kiinteään kk hintaan.
 Tervetuloa treenaamaan.</p>
-<button onclick="location.href='contact.html'">Liity nyt</button>
+<button onclick="location.href='join.html'">Liity nyt</button>
 </div>
 <div class="card">
 <h3><svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-massage"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M3 17a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M8 5a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" /><path d="M4 22l4 -2v-3h12" /><path d="M11 20h9" /><path d="M8 14l3 -2l1 -4c3 1 3 4 3 6" /></svg> Kuntosali & Palautuminen</h3>
 <p><strong>Hopea tason jäsenyys</strong><br>
 Kuntosalijäsenyys ja palautumispaketti 1kk 70€ (kertamaksulla 12kk = 800€)<br>
 Hopea tason jäsenyys avaa käyttöösi meidän kuntosalin mahtavat palvelut ja välineet ammattilaistason palautumiseen treenin jälkeen.</p>
-<button onclick="location.href='contact.html'">Liity nyt</button>
+<button onclick="location.href='join.html'">Liity nyt</button>
 </div>
 <div class="card">
 <h3><svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 24 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-gymnastics"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M7 7a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" /><path d="M13 21l1 -9l7 -6" /><path d="M3 11h6l5 1" /><path d="M11.5 8.5l4.5 -3.5" /></svg> Kuntosali & Ryhmäliikunta</h3>
 <p><strong>Kulta tason jäsenyys</strong><br>
 Kuntosali ja ryhmäliikunta 1kk 85€ (kertamaksulla 12kk = 950€)<br>
 Kulta tasolla pääset kuntosalin käytön lisäksi osallistumaan ohjatuille ryhmäliikunta tunneille.</p>
-<button onclick="location.href='contact.html'">Liity nyt</button>
+<button onclick="location.href='join.html'">Liity nyt</button>
 </div>
 <div class="card">
 <h3><svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 24 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873l-6.158 -3.245" /></svg> Kuntosali & ryhmäliikunta & palautumispaketti</h3>
@@ -96,7 +97,7 @@ Kulta tasolla pääset kuntosalin käytön lisäksi osallistumaan ohjatuille ryh
 Kuntosalijäsenyys,ryhmäliikunta ja palautumispaketti 1kk 100e (kertamaksulla 12kk = 1000€)<br>
 Platina tasolla saat käyttöösi kaikki kuntosalin palvelut. Energisen ryhmäliikunta treenin tai kovan punttitreenin jälkeen pääset nauttimaan myös palautumisesta.<br>
 Kaikki kätevästi saman katon alta.</p>
-<button onclick="location.href='contact.html'">Liity nyt</button>
+<button onclick="location.href='join.html'">Liity nyt</button>
 </div>
 </div>
 </section>
@@ -131,10 +132,38 @@ Kaikki kätevästi saman katon alta.</p>
 </section>
 
 <section id="customers">
-
     <h2>Asiakaskokemukset</h2>
-    <div class="feedback-grid">
-    <p>"Vihdoin saan ammattimaista ohjausta myös lajikohtaiseen harjoitteluun,sopii urheilijoille erinomaisesti..."</p>
+
+    <div class="testimonial-slider">
+        <input type="radio" name="testimonial" id="t1" checked>
+        <input type="radio" name="testimonial" id="t2">
+        <input type="radio" name="testimonial" id="t3">
+
+    <div class="slides">
+        <article class="slide">
+            <div class="stars">★★★★★</div>
+            <p>"Vihdoin saan ammattimaista ohjausta myös lajikohtaiseen harjoitteluun,sopii urheilijoille erinomaisesti..."</p>
+            <div class="author">– Anna</div>
+        </article>
+
+        <article class="slide">
+            <div class="stars">★★★★★</div>
+            <p>"Suosittelen lämpimästi, asiakaspalvelu oli erinomaista."</p>
+            <div class="author">– Mikko</div>
+        </article>
+
+        <article class="slide">
+            <div class="stars">★★★★☆</div>
+            <p>"Todella selkeä ja ammattimainen palvelu."</p>
+            <div class="author">– Laura</div>
+        </article>
+    </div>
+
+        <div class="dots">
+            <label for="t1"></label>
+            <label for="t2"></label>
+            <label for="t3"></label>
+        </div>
     </div>
 </section>
 </main>
